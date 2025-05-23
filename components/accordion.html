@@ -1,0 +1,132 @@
+<!--
+-> accordion.html
+-> @fraxgut
+-> AGPLv3
+-> Accordion HTML file.
+-->
+
+<h2>Accordions</h2>
+
+<!--Simple Accordion-->
+<h3>Simple Accordion</h3>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <button type="button" aria-label="Section 1" class="accordion-header" _="on click
+        if I match .active
+          remove .active from me
+          add .hidden to next .accordion-content
+        else
+          remove .active from .accordion-header
+          add .hidden to .accordion-content
+          add .active to me
+          remove .hidden from next .accordion-content
+        end">
+      Section 1
+      <i class="bx bxs-down-arrow"></i>
+    </button>
+    <div class="accordion-content hidden">
+      <p>This is the content for Section 1.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button type="button" aria-label="Section 2" class="accordion-header" _="on click
+        if I match .active
+          remove .active from me
+          add .hidden to next .accordion-content
+        else
+          remove .active from .accordion-header
+          add .hidden to .accordion-content
+          add .active to me
+          remove .hidden from next .accordion-content
+        end">
+      Section 2
+      <i class="bx bxs-down-arrow"></i>
+    </button>
+    <div class="accordion-content hidden">
+      <p>This is the content for Section 2.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button type="button" aria-label="Section 3" class="accordion-header" _="on click
+        if I match .active
+          remove .active from me
+          add .hidden to next .accordion-content
+        else
+          remove .active from .accordion-header
+          add .hidden to .accordion-content
+          add .active to me
+          remove .hidden from next .accordion-content
+        end">
+      Section 3
+      <i class="bx bxs-down-arrow"></i>
+    </button>
+    <div class="accordion-content hidden">
+      <p>This is the content for Section 3.</p>
+    </div>
+  </div>
+</div>
+
+<!--Strong Accordion-->
+<h3>Strong Accordion</h3>
+
+<div class="accordion accordion--strong">
+  <div class="accordion-item">
+    <button type="button" aria-label="Section 1" class="accordion-header" _="on click
+        if I match .active
+          remove .active from me
+          add .hidden to next .accordion-content
+        else
+          remove .active from .accordion-header
+          add .hidden to .accordion-content
+          add .active to me
+          remove .hidden from next .accordion-content
+        end">
+      Section 1
+      <i class="bx bxs-down-arrow"></i>
+    </button>
+    <div class="accordion-content hidden">
+      <p>This is the content for Section 1.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button type="button" aria-label="Section 2" class="accordion-header" _="on click
+        if I match .active
+          remove .active from me
+          add .hidden to next .accordion-content
+        else
+          remove .active from .accordion-header
+          add .hidden to .accordion-content
+          add .active to me
+          remove .hidden from next .accordion-content
+        end">
+      Section 2
+      <i class="bx bxs-down-arrow"></i>
+    </button>
+    <div class="accordion-content hidden">
+      <p>This is the content for Section 2.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button type="button" aria-label="Section 3" class="accordion-header" _="on click
+        if I match .active
+          remove .active from me
+          add .hidden to next .accordion-content
+        else
+          remove .active from .accordion-header
+          add .hidden to .accordion-content
+          add .active to me
+          remove .hidden from next .accordion-content
+        end">
+      Section 3
+      <i class="bx bxs-down-arrow"></i>
+    </button>
+    <div class="accordion-content hidden">
+      <p>This is the content for Section 3.</p>
+    </div>
+  </div>
+</div>

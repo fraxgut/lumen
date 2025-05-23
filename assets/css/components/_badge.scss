@@ -1,0 +1,100 @@
+.badge {
+  display: inline-block;
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
+  font-weight: 500;
+  border: 1px solid $badge-border-color;
+  text-align: center;
+  color: $badge-text-color;
+
+  &--active {
+    background-color: $badge-active-color;
+  }
+
+  &--review {
+    background-color: $badge-review-color;
+  }
+
+  &--inactive {
+    background-color: $badge-inactive-color;
+  }
+
+  &--pending {
+    background-color: $badge-pending-color;
+  }
+
+  &--banned {
+    background-color: $badge-banned-color;
+  }
+}
+
+.button-with-badge {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: $global-circle-radius;
+  background-color: $badge-background-color;
+  border: 1px solid $badge-border-color;
+
+  .badge--number {
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    min-width: 20px;
+    height: 1.25rem;
+    padding: 0 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $global-circle-radius;
+    font-size: 0.625rem;
+    font-weight: 500;
+    background-color: $badge-banned-color;
+    color: $badge-text-color;
+    pointer-events: none;
+  }
+}
+
+.list-item-with-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 15rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: $badge-background-color;
+  box-shadow: 3px 3px 0 0 $badge-border-color;
+  text-decoration: none;
+
+  a,
+  i {
+    color: $badge-text-color;
+  }
+
+  .list-item-text {
+    flex-grow: 1;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $badge-text-color;
+  }
+
+  .badge--list {
+    min-width: 1rem;
+    height: 1.5rem;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $badge-border-radius;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.045em;
+    background-color: white;
+    border: 1px solid $badge-border-color;
+  }
+}

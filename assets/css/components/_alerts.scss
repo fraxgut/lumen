@@ -1,0 +1,108 @@
+.alert-wrapper {
+	margin: 1rem;
+}
+
+.alert {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	padding: $alert-padding;
+	max-width: $alert-max-width;
+	box-sizing: border-box;
+	border-radius: $alert-border-radius;
+	border: 1px solid $alert-border-color;
+	gap: 1rem;
+
+	.alert-text {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	&:hover {
+		border: 2px solid $alert-border-color;
+		box-shadow: 3px 3px 0 0 $alert-border-color;
+	}
+
+	&--info {
+		background-color: map-get($alert-colors, "info");
+	}
+
+	&--success {
+		background-color: map-get($alert-colors, "success");
+	}
+
+	&--danger {
+		background-color: map-get($alert-colors, "danger");
+	}
+
+	&--warning {
+		background-color: map-get($alert-colors, "warning");
+	}
+
+	&--close {
+		background-color: map-get($alert-colors, "close");
+	}
+
+	&--strong {
+		border: 2px solid $alert-border-color;
+		box-shadow: 3px 3px 0 0 $alert-border-color;
+	}
+
+	&--dismissible {
+		.alert-close-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: none;
+			border: none;
+			cursor: pointer;
+
+			i {
+				font-size: $alert-close-size;
+				color: #333333;
+
+				&:hover {
+					color: darken(#333333, 50%);
+				}
+			}
+		}
+	}
+
+	.alert-icon {
+		font-size: $alert-icon-size;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+
+	&__details {
+		font-size: 0.875rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		list-style-type: disc;
+		padding-left: 1.25rem;
+		margin: 0;
+		gap: 0.25rem;
+	}
+}
+
+.alert--error {
+	background-color: map-get($alert-colors, "danger");
+	border-color: $alert-border-color;
+}
+
+.alert-list-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-grow: 1;
+	gap: 0.5rem;
+	font-size: 0.8rem;
+}

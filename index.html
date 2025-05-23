@@ -1,0 +1,52 @@
+<!--
+-> index.html
+-> @fraxgut
+-> AGPLv3
+-> Index (main) HTML file.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI Framework</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/htmx.org@2.0.4"
+		integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/hyperscript.org@0.9.13"></script>
+</head>
+
+<body>
+	<header>
+		<h1>LUMEN - Library of Universal Modular Elements for Neobrutalism</h1>
+	</header>
+
+	<main>
+		<!-- Accordion -->
+		<section id="accordion" hx-get="components/accordion.html" hx-trigger="load"></section>
+
+		<!-- Alerts -->
+		<section id="alerts" hx-get="components/alerts.html" hx-trigger="load"></section>
+
+		<!-- Avatar -->
+		<section id="avatar" hx-get="components/avatar.html" hx-trigger="load"></section>
+
+		<!-- Badge -->
+		<section id="badge" hx-get="components/badge.html" hx-trigger="load"></section>
+
+		<!-- Breadcrumb -->
+		<section id="breadcrumb" hx-get="components/breadcrumb.html" hx-trigger="load"></section>
+
+		<!-- Button -->
+		<section id="button" hx-get="components/button.html" hx-trigger="load"></section>
+
+		<!-- Card -->
+		<section id="card" hx-get="components/card.html" hx-trigger="load"></section>
+	</main>
+</body>
+
+</html>

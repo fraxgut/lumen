@@ -1,0 +1,146 @@
+// _button.scss
+// @fraxgut
+// AGPLv3
+// Button SCSS file.
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: $button-padding-vertical $button-padding-horizontal;
+  font-size: $button-font-size;
+  letter-spacing: $button-tracking;
+  font-weight: 500;
+  border: $button-default-border-width solid $button-border-color;
+  border-radius: $button-border-radius;
+  background-color: $button-white-bg;
+  color: $button-text-color;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translate($button-default-translate, $button-default-translate);
+    box-shadow: $button-default-shadow;
+  }
+
+  &:active {
+    transform: translate(0, 0);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &--small {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  &--large {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  &--icon {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--strong {
+    border-width: $button-strong-border-width;
+
+    &:hover,
+    &:focus {
+      transform: translate(0, 0);
+      box-shadow: $button-strong-shadow;
+    }
+
+    &:active {
+      transform: translate(0.125rem, 0.125rem);
+    }
+  }
+
+  &--fixed {
+
+    &:hover,
+    &:focus {
+      transform: translate(0, $button-default-translate);
+    }
+  }
+
+  &--rounded {
+    border-radius: 9999px;
+  }
+
+  &--primary {
+    background-color: $button-primary-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $button-primary-hover-bg;
+    }
+
+    &:active {
+      background-color: darken($button-primary-bg, 10%);
+    }
+  }
+
+  &--warning {
+    background-color: $button-warning-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $button-warning-hover-bg;
+    }
+
+    &:active {
+      background-color: darken($button-warning-bg, 10%);
+    }
+  }
+
+  &--success {
+    background-color: $button-success-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $button-success-hover-bg;
+    }
+
+    &:active {
+      background-color: darken($button-success-bg, 10%);
+    }
+  }
+
+  &--danger {
+    background-color: $button-danger-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $button-danger-hover-bg;
+    }
+
+    &:active {
+      background-color: darken($button-danger-bg, 10%);
+    }
+  }
+
+  &--white {
+    background-color: $button-white-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $button-white-bg;
+    }
+
+    &:active {
+      background-color: darken($button-white-bg, 5%);
+    }
+  }
+}

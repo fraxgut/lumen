@@ -1,0 +1,67 @@
+// _breadcrumb.scss
+// @fraxgut
+// AGPLv3
+// Breadcrumb SCSS file.
+
+.breadcrumb {
+  &__list {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: $breadcrumb-font-size;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__separator {
+    margin: 0 $breadcrumb-separator-margin;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+
+    &:hover {
+      text-decoration: $breadcrumb-link-hover-decoration;
+    }
+  }
+
+  &--with-icon {
+    display: inline-flex;
+    gap: $breadcrumb-gap;
+    white-space: nowrap;
+  }
+
+  &__item--with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: $breadcrumb-item-gap;
+  }
+
+  &__link--icon {
+    display: inline-flex;
+    align-items: center;
+    gap: $breadcrumb-item-gap;
+    font-size: $breadcrumb-font-size;
+
+    &:hover {
+      text-decoration: $breadcrumb-link-hover-decoration;
+    }
+  }
+
+  &__icon {
+    font-size: $breadcrumb-icon-font-size;
+    margin-left: $breadcrumb-icon-margin-left;
+  }
+
+  &__current {
+    font-size: $breadcrumb-font-size;
+    font-weight: $breadcrumb-current-font-weight;
+  }
+}

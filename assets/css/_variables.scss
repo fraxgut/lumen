@@ -1,0 +1,130 @@
+// Frankifuscus Base16
+$base00: #000000; // Negro
+$base01: #0C0C0B;
+$base02: #242321;
+$base03: #43423E;
+$base04: #6A6862;
+$base05: #96948B;
+$base06: #C8C4B8;
+$base07: #FFFAEB; // Blanco
+$base08: #F8A8B2; // Rojo
+$base09: #F8B28A; // Naranja
+$base0A: #F8DA8A; // Amarillo
+$base0B: #DAF88A; // Verde
+$base0C: #8AF8D2; // Cian
+$base0D: #8AD2F8; // Azul
+$base0E: #C28AF8; // Violeta
+$base0F: #F88ABD; // Magenta
+
+// Global
+$global-max-width: 100%;
+$global-padding: calc(1vmin + .5rem);
+$global-font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
+$global-line-height: 1.75;
+$global-circle-radius: 100%;
+
+// Accordion
+$accordion-padding: calc(1vmin + .5rem);
+$accordion-active-color: #F1EEEB;
+$accordion-background-color: #F1EEEB;
+$accordion-border-color: $base00;
+$accordion-content-color: #F9F8F6;
+$accordion-text-color: $base00;
+
+// Alert
+$alert-max-width: 150ch;
+$alert-padding: calc(1vmin + .5rem);
+$alert-border-radius: 0.5rem;
+$alert-icon-size: 1.5rem;
+$alert-close-size: 1.25rem;
+
+$alert-colors: (
+  "info": #FFFAEB,
+  "success": #DAF88A,
+  "danger": #F8A8B2,
+  "warning": #F8B28A,
+  "close": #F88ABD,
+);
+
+$alert-border-color: $base00;
+$alert-text-color: $base00;
+
+// Avatar
+$avatar-background-color: #F9F8F6;
+$avatar-border-color: $base00;
+$avatar-online-color: $base0B;
+
+// Badge
+$badge-padding: 0.375rem 0.75rem;
+$badge-border-radius: 9999px;
+
+$badge-background-color: #FFFAEB;
+$badge-border-color: $base00;
+$badge-text-color: $base00;
+
+$badge-active-color: $base0B;
+$badge-inactive-color: #F1EEEB;
+$badge-review-color: $base0C;
+$badge-pending-color: $base09;
+$badge-banned-color: $base08;
+
+// Breadcrumb
+$breadcrumb-font-size: 0.875rem;
+$breadcrumb-link-hover-decoration: underline;
+$breadcrumb-separator-margin: 0.5rem;
+$breadcrumb-icon-font-size: 0.875rem;
+$breadcrumb-icon-margin-left: 0.25rem;
+$breadcrumb-current-font-weight: 600;
+$breadcrumb-gap: 0.5rem;
+$breadcrumb-item-gap: 0.25rem;
+
+// Button
+$button-padding-vertical: 0.625rem;
+$button-padding-horizontal: 1.25rem;
+$button-font-size: $global-font-size;
+$button-tracking: 0.00714em;
+
+$button-default-border-width: 1px;
+$button-strong-border-width: 2px;
+$button-border-color: $base00;
+$button-border-radius: 0.125rem;
+$button-white-bg: $base07;
+$button-text-color: $base00;
+
+$button-default-translate: -0.125rem;
+$button-default-shadow: 4px 4px 0 0 $button-border-color;
+$button-strong-shadow: 3px 3px 0 0 $button-border-color;
+
+$button-primary-bg: $base0C;
+$button-primary-hover-bg: darken($base0C, 10%);
+
+$button-warning-bg: $base0A;
+$button-warning-hover-bg: darken($base0A, 10%);
+
+$button-success-bg: $base0B;
+$button-success-hover-bg: darken($base0B, 10%);
+
+$button-danger-bg: $base08;
+$button-danger-hover-bg: darken($base08, 10%);
+
+// Card
+$card-border-width: 1px;
+$card-strong-border-width: 2px;
+$card-simple-border-width: 1px;
+
+$card-border-color: $base00;
+$card-border-radius: 0.5rem;
+$card-bg-color: $base07;
+$card-text-color: $base00;
+$card-subtext-color: $base03;
+$card-padding: 0.35rem 0.75rem;
+
+$card-hover-translate: -0.25rem;
+$card-strong-shadow: 4px 4px 0 0 $base00;
+$card-simple-shadow: 4px 4px 0 0 $base00;
+$card-avatar-border-width: 2px;
+
+$card-yellow-bg: darken($base0A, 20%);
+$card-gray-bg: #F1EEEB;
+$card-danger-bg: $base08;
+$card-lime-bg: $base0B;

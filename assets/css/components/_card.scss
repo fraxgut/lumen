@@ -1,0 +1,140 @@
+// _card.scss
+// @fraxgut
+// AGPLv3
+// Card SCSS file.
+
+.card-section {
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  max-width: 24rem;
+  border: $card-border-width solid $card-border-color;
+  border-radius: $card-border-radius;
+  background-color: $card-bg-color;
+  color: $card-text-color;
+  padding: $card-padding;
+  transition: transform .3s ease, box-shadow .3s ease;
+
+  &--strong {
+    border-width: $card-strong-border-width;
+    box-shadow: $card-strong-shadow;
+  }
+
+  &--simple {
+    border-width: $card-simple-border-width;
+
+    &:hover {
+      transform: translate($card-hover-translate, $card-hover-translate);
+      box-shadow: $card-simple-shadow;
+    }
+  }
+
+  &--horizontal {
+    display: flex;
+    align-items: stretch;
+
+    .card__img {
+      width: 30%;
+      min-width: 6rem;
+      object-fit: cover;
+      border-radius: .25rem;
+    }
+
+    .card__body {
+      flex: 1;
+      padding-left: 1rem;
+    }
+  }
+
+  &--review {
+    display: flex;
+    flex-direction: column;
+
+    .card__header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card__avatar {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .card__info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card__rating {
+      display: flex;
+      gap: .25rem;
+      margin-bottom: .75rem;
+      font-size: 1.1rem;
+
+      .bx {
+        color: $card-text-color;
+      }
+    }
+  }
+
+  &--hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: $card-simple-shadow;
+  }
+
+  &--yellow {
+    background-color: $card-yellow-bg;
+  }
+
+  &--gray {
+    background-color: $card-gray-bg;
+  }
+
+  &--danger {
+    background-color: $card-danger-bg;
+  }
+
+  &--lime {
+    background-color: $card-lime-bg;
+  }
+
+  .card__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0 0 .25rem;
+  }
+
+  .card__subtitle {
+    font-size: 0.875rem;
+    color: $card-subtext-color;
+    margin: 0;
+  }
+
+  .card__date {
+    font-size: 0.75rem;
+    color: $card-subtext-color;
+    margin: 0 0 .5rem;
+  }
+
+  .card__text {
+    margin: .5rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

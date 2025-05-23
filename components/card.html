@@ -1,0 +1,124 @@
+<!--
+-> card.html
+-> @fraxgut
+-> AGPLv3
+-> Card HTML file.
+-->
+
+<h2>Card</h2>
+
+<!-- Card Strong & Basic -->
+<section class="card-section">
+  <h3>Card Strong &amp; Basic</h3>
+  <div class="cards-grid">
+    <!-- Ejemplo 1 -->
+    <div class="card card--strong">
+      <p>Hello World</p>
+    </div>
+    <!-- Ejemplo 2 (Fondo Amarillo) -->
+    <div class="card card--strong card--yellow">
+      <p>Hello World</p>
+    </div>
+    <!-- Ejemplo 3 (Fondo Gris) -->
+    <div class="card card--strong card--gray">
+      <p>Hello World</p>
+    </div>
+  </div>
+</section>
+
+<!-- Card Simple -->
+<section class="card-section">
+  <h3>Card Simple</h3>
+  <div class="cards-grid">
+    <!-- Ejemplo 1 -->
+    <div class="card card--simple">
+      <p>Hello World</p>
+    </div>
+    <!-- Ejemplo 2 (Fondo Rojo) -->
+    <div class="card card--simple card--danger">
+      <p>Hello World</p>
+    </div>
+    <!-- Ejemplo 3 (Fondo Verde Lima) -->
+    <div class="card card--simple card--lime">
+      <p>Hello World</p>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Strong & Simple (con Imagen) -->
+<section class="card-section">
+  <h3>Blog Strong &amp; Simple</h3>
+  <div class="cards-grid">
+    <!-- Card Strong with Image -->
+    <div class="card card--strong card--horizontal">
+      <img class="card__img" src="../assets/img/avatar.jpg" alt="Image Description">
+      <div class="card__body">
+        <h3 class="card__title">Example Card title</h3>
+        <span class="card__date">Jan 12, 2024</span>
+        <p class="card__text">
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card Simple with Image -->
+    <div class="card card--simple card--horizontal card--hover-lift">
+      <img class="card__img" src="../assets/img/avatar.jpg" alt="Image Description">
+      <div class="card__body">
+        <h3 class="card__title">Example Card title</h3>
+        <span class="card__date">Jan 12, 2024</span>
+        <p class="card__text">
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Card Review -->
+<section class="card-section">
+  <h3>Card Review</h3>
+  <div class="cards-grid">
+    <!-- Review Strong -->
+    <div class="card card--strong card--review card--yellow">
+      <div class="card__header">
+        <img class="card__avatar" src="../assets/img/avatar.jpg" alt="Client 1">
+        <div class="card__info">
+          <h3 class="card__title">Client 1</h3>
+          <p class="card__subtitle">Corporation 1</p>
+        </div>
+      </div>
+      <div class="card__rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+      </div>
+      <p class="card__text">
+        Working with Client 1 was an incredible experience. Highly recommended!
+      </p>
+    </div>
+
+    <!-- Review Simple -->
+    <div class="card card--simple card--review card--yellow card--hover-lift">
+      <div class="card__header">
+        <img class="card__avatar" src="../assets/img/avatar.jpg" alt="Client 2">
+        <div class="card__info">
+          <h3 class="card__title">Client 2</h3>
+          <p class="card__subtitle">Corporation 2</p>
+        </div>
+      </div>
+      <div class="card__rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+      </div>
+      <p class="card__text">
+        Working with Client 2 was an incredible experience. Highly recommended!
+      </p>
+    </div>
+  </div>
+</section>
