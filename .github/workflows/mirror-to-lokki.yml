@@ -1,0 +1,17 @@
+name: Mirror main to lokkierp/lokki:lumen-upstream
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (bare mirror)
+        run: |
+          git clone --mirror https://github.com/${{ github.repository }} repo
+          cd repo
+          git remote add lokki https://${{ secrets.LOKKI_TOKEN }}@github.com/lokkierp/lokki.git
+          # fuerza sólo la rama que nos interesa
+          git push --force lokki refs/heads/main:refs/heads/lumen-upstream
